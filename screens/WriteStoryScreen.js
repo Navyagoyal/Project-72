@@ -1,6 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput } from 'react-native';
-import { Header } from 'react-native/Libraries/NewAppScreen';
+import { StyleSheet, Text, View} from 'react-native';
+import { Header } from 'react-native-elements';
+import {TextInput} from 'react-native-gesture-handler';
+import db from '../config';
+import firebase from 'firebase';
 
 export default class WriteStoryScreen extends React.Component {
   constructor(){
@@ -14,10 +17,7 @@ export default class WriteStoryScreen extends React.Component {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
-      <Header></Header>
-      <TextInput style={styles.bar} placeholder="Title of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
-      <TextInput style={styles.bar} placeholder="Author of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
-      <TextInput style={styles.bar} placeholder="Write the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
+      
     </View>
   );
     }

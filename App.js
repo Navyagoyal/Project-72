@@ -6,10 +6,17 @@ import ReadStoryScreen from './screens/ReadStoryScreen';
 import WriteStoryScreen from './screens/WriteStoryScreen';
 
 export default class App extends React.Component{
+  submitStory=()=>{
+    
+  }
   render(){
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Header>Hi</Header>
+      <TextInput style={styles.bar} placeholder="Title of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
+      <TextInput style={styles.bar} placeholder="Author of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
+      <TextInput style={styles.bar} placeholder="Write the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
+      <AppContainer/>
     </View>
   );
   }
@@ -38,6 +45,7 @@ const TabNavigator=createBottomTabNavigator({
   })
 }
 )
+const AppContainer=createAppContainer(TabNavigator);
 
 const styles = StyleSheet.create({
   container: {
