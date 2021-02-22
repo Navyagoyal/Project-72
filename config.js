@@ -3,13 +3,12 @@ require('@firebase/firestore');
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDfie2BavpCX7nG9jahxE6wjhM-DVynr6Q",
-    authDomain: "newsletter-66b5a.firebaseapp.com",
-    databaseURL: "https://newsletter-66b5a-default-rtdb.firebaseio.com",
-    projectId: "newsletter-66b5a",
-    storageBucket: "newsletter-66b5a.appspot.com",
-    messagingSenderId: "487103661836",
-    appId: "1:487103661836:web:100563ba09006e6058eb29"
+    apiKey: "AIzaSyBQlYFq3iKj5KQMGJLi6auF3u2YWONldNU",
+    authDomain: "story-hub-98481.firebaseapp.com",
+    projectId: "story-hub-98481",
+    storageBucket: "story-hub-98481.appspot.com",
+    messagingSenderId: "1072371396423",
+    appId: "1:1072371396423:web:cba29dbd988579dbc7e662"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

@@ -1,21 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Image} from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import ReadStoryScreen from './screens/ReadStoryScreen';
 import WriteStoryScreen from './screens/WriteStoryScreen';
+import {Header} from 'react-native-elements';
+import {TextInput} from 'react-native-gesture-handler';
+import db from './config';
+import firebase from 'firebase';
 
 export default class App extends React.Component{
-  submitStory=()=>{
-    
-  }
   render(){
   return (
-    <View style={styles.container}>
-      <Header>Hi</Header>
-      <TextInput style={styles.bar} placeholder="Title of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
-      <TextInput style={styles.bar} placeholder="Author of the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
-      <TextInput style={styles.bar} placeholder="Write the story" on onChangeText={(text)=>{this.setState({search:text})}}/>
+    <View style={styles.container}>  
       <AppContainer/>
     </View>
   );
